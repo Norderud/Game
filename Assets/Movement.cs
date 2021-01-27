@@ -28,9 +28,9 @@ public class Movement : MonoBehaviour
         controller.Move(move * (speed * Time.deltaTime));
         
         if(Input.GetButtonDown("Jump")){
-            Debug.Log(groundedPlayer.ToString());
             if (groundedPlayer)
             {
+                Debug.Log("Should be jumpih");
                 playerVelocity.y += jumpHeight;
             }
         }
